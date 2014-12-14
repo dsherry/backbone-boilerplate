@@ -1,19 +1,20 @@
 define(function(require, exports, module) {
-  "use strict";
+    "use strict";
 
-  // External dependencies.
-  var Backbone = require("backbone");
+    // External dependencies.
+    var Backbone = require("backbone");
 
-  // Defining the application router.
-  var Router = Backbone.Router.extend({
-    routes: {
-      "": "index"
-    },
+    // Defining the application router.
+    var Router = Backbone.Router.extend({
+        routes: {
+            "": "index"
+        },
 
-    index: function() {
-      console.log("Welcome to your / route.");
-    }
-  });
+        index: function() {
+            console.log("Welcome to your / route.");
 
-  module.exports = Router;
+        }
+    });
+
+    module.exports = Router;
 });
