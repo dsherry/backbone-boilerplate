@@ -9,5 +9,28 @@ require.config({
         "layoutmanager": "../bower_components/layoutmanager/backbone.layoutmanager"
     },
 
-    deps: ["main"]
+    deps: [
+        // load backbone and layoutmanager before main app
+        "backbone",
+        "layoutmanager",
+        "main"
+    ],
+
+    shim: {
+        'handlebars': { exports: 'Handlebars' },
+        'underscore': { exports: '_' },
+        'backbone': {
+            // load underscore and jquery first
+            deps: ["underscore", "jquery"],
+            // make backbone accessible via global Backbone
+            exports: 'Backbone'
+        }
+    },
+
+    callback: function() {
+        Backbone.Layout.configure({
+            // we're managing all views by default
+            manage: true
+        });
+    }
 });
