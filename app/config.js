@@ -5,7 +5,8 @@ require.config({
         "template": "../bower_components/lodash-template-loader/loader",
         "jquery": "../bower_components/jquery/dist/jquery",
         "backbone": "../bower_components/backbone/backbone",
-        "handlebars": "../bower_components/handlebars/handlebars"
+        "handlebars": "../bower_components/handlebars/handlebars",
+        "layoutmanager": "../bower_components/layoutmanager/backbone.layoutmanager"
     },
 
     deps: ["main"]

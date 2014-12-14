@@ -3,6 +3,7 @@ define(function(require, exports, module) {
 
     // External dependencies.
     var Backbone = require("backbone");
+    var LayoutManager = require("layoutmanager");
 
     // Defining the application router.
     var Router = Backbone.Router.extend({
@@ -13,6 +14,9 @@ define(function(require, exports, module) {
         index: function() {
             console.log("Welcome to your / route.");
 
+            var main = new LayoutManager({
+                name: "#main"
+            });
         }
     });
 
