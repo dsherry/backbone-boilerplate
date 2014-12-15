@@ -16,6 +16,7 @@ module.exports = ->
 
       reporters: ["dots", "coverage"]
       browsers: ["PhantomJS"]
+      # browsers: ["Chrome"]
 
       frameworks: [framework]
 
@@ -24,6 +25,7 @@ module.exports = ->
         "karma-mocha"
         "karma-qunit"
         "karma-phantomjs-launcher"
+        "karma-chrome-launcher"
         "karma-coverage"
       ]
 
@@ -40,7 +42,7 @@ module.exports = ->
         "bower_components/requirejs/require.js"
         "test/runner.js"
 
-        { pattern: "app/**/*.*", included: false }
+        { pattern: "app/**/*.*", included: false}
         {
           pattern: "test/#{framework}/**/*.spec.js",
           included: false

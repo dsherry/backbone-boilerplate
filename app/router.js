@@ -5,7 +5,9 @@ define(function(require, exports, module) {
     var Backbone = require("backbone");
     var LayoutManager = require("layoutmanager");
 
-    var IndexView = require("app/modules/IndexView.js");
+    // doing this is fine, but it really fucks with karma since that's getting loaded in a different dir
+    //var IndexView = require("../app/modules/IndexView.js");
+    var IndexView = require("indexview");
 
     // Defining the application router.
     var Router = Backbone.Router.extend({

@@ -6,7 +6,8 @@ require.config({
         "jquery": "../bower_components/jquery/dist/jquery",
         "backbone": "../bower_components/backbone/backbone",
         "handlebars": "../bower_components/handlebars/handlebars",
-        "layoutmanager": "../bower_components/layoutmanager/backbone.layoutmanager"
+        "layoutmanager": "../bower_components/layoutmanager/backbone.layoutmanager",
+        "indexview": "modules/IndexView"
     },
 
     deps: [
