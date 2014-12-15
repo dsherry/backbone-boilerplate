@@ -20,11 +20,15 @@ define(function(require, exports, module) {
 
             var main = new LayoutManager({
                 el: ".container",
-                template: "#main"
+                template: "main"
             });
 
+            debugger;
             main.setView(".index_template_container", new IndexView());
             main.render();
+            // main.render(function(contents) {
+            //     $(this.el).html(contents);
+            // });
         }
     });
 
