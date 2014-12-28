@@ -4,6 +4,7 @@ define(function(require, exports, module) {
     // External dependencies.
     var Backbone = require("backbone");
     var LayoutManager = require("layoutmanager");
+    var templates = require("templates");
 
     // doing this is fine, but it really fucks with karma since that's getting loaded in a different dir
     //var IndexView = require("../app/modules/IndexView.js");
@@ -20,7 +21,7 @@ define(function(require, exports, module) {
 
             var main = new LayoutManager({
                 el: ".container",
-                template: "#main"
+                template: Templates["app/templates/main.hbs"]
             });
 
             //debugger;
