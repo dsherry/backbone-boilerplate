@@ -4,7 +4,7 @@ define(function(require, exports, module) {
     var LayoutManager = require("layoutmanager");
 
     var IndexView = Backbone.View.extend({
-        template: "#index",
+        template: templates["index"],
     });
 
     module.exports = IndexView;
