@@ -9,6 +9,9 @@ require.config({
         "handlebars": "../bower_components/handlebars/handlebars",
         "layoutmanager": "../bower_components/layoutmanager/backbone.layoutmanager",
 
+        // handlebars templates
+        "templates": "templates/templates",
+
         // views
         "indexview": "modules/IndexView",
     },
@@ -18,6 +21,7 @@ require.config({
         "backbone",
         "layoutmanager",
         "handlebars",
+        "templates",
         "main"
     ],
 
