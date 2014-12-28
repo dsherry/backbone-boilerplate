@@ -6,7 +6,7 @@ define(function(require, exports, module) {
     var templates = require("templates");
 
     var IndexView = Backbone.View.extend({
-        template: Templates["app/templates/index.hbs"],
+        template: Templates["index"],
     });
 
     module.exports = IndexView;

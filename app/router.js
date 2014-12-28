@@ -21,7 +21,7 @@ define(function(require, exports, module) {
 
             var main = new LayoutManager({
                 el: ".container",
-                template: Templates["app/templates/main.hbs"]
+                template: Templates["main"]
             });
 
             //debugger;
