@@ -23,7 +23,7 @@ define(function(require, exports, module) {
                 template: "#main"
             });
 
-            debugger;
+            //debugger;
             main.setView(".content", new IndexView());
             main.render();
         }
