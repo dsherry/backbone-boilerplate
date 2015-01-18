@@ -13,7 +13,7 @@ require.config({
         "templates": "templates/templates",
 
         // views
-        "indexview": "modules/IndexView",
+        "indexview": "modules/views/IndexView",
     },
 
     deps: [
