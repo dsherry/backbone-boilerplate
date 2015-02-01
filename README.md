@@ -1,5 +1,9 @@
 From Dylan: this is my fork of a backbone-boilerplage project, may eventually end up standalone.
 
+Used http-server for local development
+
+This was useful: http://vimeo.com/32765088
+
 ====================
 
 ![Boilerplate](https://github.com/backbone-boilerplate/backbone-boilerplate/raw/assets/header.png)
